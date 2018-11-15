@@ -8,16 +8,14 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import frc.robot.subsystems.Launcher;
 
 
 
 public class Robot extends TimedRobot {
 
-
+//creates Launcher subsystem in Robot.java so it can be accessed by other files (like commands)
+public static Launcher Launcher = new Launcher();
   
   @Override
   public void robotInit() {
