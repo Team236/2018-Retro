@@ -12,16 +12,18 @@ import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import frc.robot.commands.SpinUp;
 
 public class OI {
-    //creates controller and button to "launch" (right now just turn on 1 motor)
-    public Joystick controller;
-    public JoystickButton launch;
+    //Creates controller and button to "launch" (right now just turn on 1 motor)
+    //Joysticks and controllers are included in the WPIlib Joystick class
+    public Joystick controller; //allows us to create a Joystick called controller
+    public JoystickButton launch; //allows us to create a Joystick Button called launch
 
   public OI() {
-      //specify the port and button to use
+      //Creates an instance of the Joystick class called controller and JoystickButton called launch
+      //Specifies the port # for the controller and button # which are constants stored in RobotMap
       controller = new Joystick(RobotMap.USB_CONTROLLER);
       launch = new JoystickButton(controller, RobotMap.SPIN_UP_BUTTON);
       
-      //runs SpinUp command while the above specified button is held down
+      //runs SpinUp command while the above specified launch button on the controller is held down
       launch.whileHeld(new SpinUp());
   }
 }

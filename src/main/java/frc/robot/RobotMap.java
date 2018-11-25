@@ -7,18 +7,18 @@
 
 package frc.robot;
 
-
+//RobotMap sets names and values of constants. Refer to RobotMap when using these constants in the code
 public class RobotMap {
+  //USB port number on laptop that the controller is plugged into
   public static final int USB_CONTROLLER = 2;
 
-  //this is the PWM number of the motor controller for the motor we want to move
+  //PWM port # on roboRIO of the motor controller for the motor we want to spin
   public static final int PWM_TOP_RIGHT = 2;
 
-  //by storing the launch speed here it is easier to change b/c you don't have to 
-  //find where you used it in the code, can be set b/w 0-1
+  //set speed of motor between -1 (full speed reverse) to 1 (full speed forward)
   public static final double LAUNCH_SPEED = 0.5;
 
-  //stores button # for spinning up, button 1 is A (green)
+  //button # on controller for spinning up, button 1 is A (green)
   public static final int SPIN_UP_BUTTON = 1;
 
   

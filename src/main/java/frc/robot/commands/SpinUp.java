@@ -17,7 +17,7 @@ public class SpinUp extends Command {
 
   public SpinUp() {
     //requires(subsystem); tells the program what subsystem the command requires
-    //(note: when you choose Robot fromt the ctrl+space menu make sure you pick the Robot
+    //(note: when you choose Robot from the ctrl+space menu make sure you pick the Robot
     //that says frc.robot next to it, if you pick the wrong Robot you won't be able to find the subsystem)
     requires(Robot.launcher);
 

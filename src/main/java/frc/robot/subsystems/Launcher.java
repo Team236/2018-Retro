@@ -19,13 +19,14 @@ public class Launcher extends Subsystem {
   public SpeedController topRight;
   
   public Launcher(){
-    //creates the new motor controller (VictorSP) based on its port # stored in RobotMap
+    //Creates an instance of the VictorSP SpeedController class based on the PWM port # it
+    //is connected to on the roboRIO. The port number is a constant store in RobotMap
     topRight = new VictorSP(RobotMap.PWM_TOP_RIGHT);
 
   }
 
-  //this method allows you to call topRight.set(speed) where speed = a number b/w 0-1 to
-  //control the speed of the motor
+  //This method sets the speed of the top right motor.
+  //Call this method in a command and pass it the speed (between -1 reverse and 1 forward) to set it
   public void setLaunchSpeed(double speed){
 
     topRight.set(speed);
