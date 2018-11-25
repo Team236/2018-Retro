@@ -16,7 +16,7 @@ import frc.robot.subsystems.Launcher;
 public class Robot extends TimedRobot {
 
 //creates Launcher subsystem in Robot.java so it can be accessed by other files (like commands)
-public static Launcher Launcher = new Launcher();
+public static Launcher launcher = new Launcher();
   
   @Override
   public void robotInit() {

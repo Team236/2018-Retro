@@ -20,7 +20,7 @@ public class SpinUp extends Command {
     //requires(subsystem); tells the program what subsystem the command requires
     //(note: when you choose Robot fromt the ctrl+space menu make sure you pick the Robot
     //that says frc.robot next to it, if you pick the wrong Robot you won't be able to find the subsystem)
-    requires(Robot.Launcher);
+    requires(Robot.launcher);
 
   }
 
@@ -37,7 +37,7 @@ public class SpinUp extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    Robot.Launcher.setLaunchSpeed(speed);
+    Robot.launcher.setLaunchSpeed(speed);
   }
 
   // Make this return true when this Command no longer needs to run execute()
@@ -49,7 +49,7 @@ public class SpinUp extends Command {
   // Called once after isFinished returns true
   @Override
   protected void end() {
-    Robot.Launcher.stopLaunch();
+    Robot.launcher.stopLaunch();
   }
 
   // Called when another command which requires one or more of the same
