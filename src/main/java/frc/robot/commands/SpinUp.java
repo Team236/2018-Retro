@@ -13,8 +13,7 @@ import frc.robot.RobotMap;
 
 public class SpinUp extends Command {
 
-  //tells the program where to find the speed to run the motor at
-  public double speed = RobotMap.LAUNCH_SPEED;
+  
 
   public SpinUp() {
     //requires(subsystem); tells the program what subsystem the command requires
@@ -25,8 +24,7 @@ public class SpinUp extends Command {
   }
 
   public SpinUp(double _speed) {
-    this();
-    this.speed = _speed;
+    
   }
 
   // Called just before this Command runs the first time
@@ -37,7 +35,7 @@ public class SpinUp extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    Robot.launcher.setLaunchSpeed(speed);
+    Robot.launcher.setLaunchSpeed(RobotMap.LAUNCH_SPEED);
   }
 
   // Make this return true when this Command no longer needs to run execute()
