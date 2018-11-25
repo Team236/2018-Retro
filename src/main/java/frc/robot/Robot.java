@@ -8,6 +8,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
+import edu.wpi.first.wpilibj.command.Scheduler;
 import frc.robot.subsystems.Launcher;
 
 
@@ -34,6 +35,7 @@ public static Launcher Launcher = new Launcher();
 
   @Override
   public void disabledPeriodic() {
+    Scheduler.getInstance().run();
   }
 
   
@@ -44,6 +46,7 @@ public static Launcher Launcher = new Launcher();
   
   @Override
   public void autonomousPeriodic() {
+    Scheduler.getInstance().run();
   }
 
   @Override
@@ -53,6 +56,7 @@ public static Launcher Launcher = new Launcher();
   
   @Override
   public void teleopPeriodic() {
+    Scheduler.getInstance().run();
   }
 
   
