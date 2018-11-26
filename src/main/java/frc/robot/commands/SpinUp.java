@@ -22,11 +22,7 @@ public class SpinUp extends Command {
     requires(Robot.launcher);
 
   }
-
-  public SpinUp(double _speed) {
-    
-  }
-
+  
   // Called just before this Command runs the first time
   @Override
   protected void initialize() {
