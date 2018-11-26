@@ -19,8 +19,9 @@ public class Launcher extends Subsystem {
   public SpeedController topRight;
   
   public Launcher(){
-    //Creates an instance of the VictorSP SpeedController class based on the PWM port # it
-    //is connected to on the roboRIO. The port number is a constant store in RobotMap
+    //Creates an instance of the VictorSP SpeedController class (called topRight)
+    //based on the PWM port # it is connected to on the roboRIO. 
+    //The port number is a constant store in RobotMap
     topRight = new VictorSP(RobotMap.PWM_TOP_RIGHT);
 
   }

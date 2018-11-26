@@ -17,7 +17,8 @@ public class Robot extends TimedRobot {
   //declare oi
   public static OI oi;
 
-  //creates Launcher subsystem in Robot.java so it can be accessed by other files (like commands)
+  //Creates instance of Launcher subsystem calld launcher
+  //(must create an instance of all subsystems in Robot.java)
   public static Launcher launcher = new Launcher();
 
   
