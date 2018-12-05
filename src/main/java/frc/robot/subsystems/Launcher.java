@@ -15,7 +15,7 @@ import frc.robot.RobotMap;
 
 public class Launcher extends Subsystem {
   
-
+  //Allows us to create an instance of the WPILib SpeedController Class named "topRight"
   public SpeedController topRight;
   
   public Launcher(){
@@ -29,7 +29,8 @@ public class Launcher extends Subsystem {
   //This method sets the speed of the top right motor.
   //Call this method in a command and pass it the speed (between -1 reverse and 1 forward) to set it
   public void setLaunchSpeed(double speed){
-
+    
+    //"set" is a method already in the WPILib SpeedController class.  Guess what it does.
     topRight.set(speed);
 
   }

@@ -14,7 +14,7 @@ import frc.robot.subsystems.Launcher;
 
 
 public class Robot extends TimedRobot {
-  //declare oi
+  //declare oi Allows us to create an instance of the OI class named oi
   public static OI oi;
 
   //Creates instance of Launcher subsystem calld launcher
