@@ -14,6 +14,9 @@ public class RobotMap {
 
   //PWM port # on roboRIO of the motor controller for the motor we want to spin
   public static final int PWM_TOP_RIGHT = 2;
+  public static final int PWM_TOP_LEFT = 3;
+	public static final int PWM_BOTTOM_RIGHT = 4;
+	public static final int PWM_BOTTOM_LEFT = 5;
 
   //set speed of motor between -1 (full speed reverse) to 1 (full speed forward)
   public static final double LAUNCH_SPEED = 0.5;

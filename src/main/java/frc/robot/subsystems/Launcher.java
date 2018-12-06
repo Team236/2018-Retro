@@ -17,21 +17,30 @@ public class Launcher extends Subsystem {
   
   //Allows us to create an instance of the WPILib SpeedController Class named "topRight"
   public SpeedController topRight;
+  public SpeedController topLeft;
+  public SpeedController bottomRight;
+  public SpeedController bottomLeft;
   
   public Launcher(){
     //Creates an instance of the VictorSP SpeedController class (called topRight)
     //based on the PWM port # it is connected to on the roboRIO. 
     //The port number is a constant store in RobotMap
     topRight = new VictorSP(RobotMap.PWM_TOP_RIGHT);
+    topLeft = new VictorSP(RobotMap.PWM_TOP_LEFT);
+    bottomRight = new VictorSP(RobotMap.PWM_BOTTOM_RIGHT);
+    bottomLeft = new VictorSP(RobotMap.PWM_BOTTOM_LEFT);
 
   }
 
   //This method sets the speed of the top right motor.
   //Call this method in a command and pass it the speed (between -1 reverse and 1 forward) to set it
   public void setLaunchSpeed(double speed){
-    
+
     //"set" is a method already in the WPILib SpeedController class.  Guess what it does.
     topRight.set(speed);
+    topLeft.set(-speed); //-speed makes the wheels spin the opposite direction, but at the same speed
+    bottomRight.set(speed);
+    bottomLeft.set(-speed);
 
   }
 
