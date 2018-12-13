@@ -9,6 +9,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import frc.robot.subsystems.Drive;
 import frc.robot.subsystems.Launcher;
 
 
@@ -20,6 +21,7 @@ public class Robot extends TimedRobot {
   //Creates instance of Launcher subsystem calld launcher
   //(must create an instance of all subsystems in Robot.java)
   public static Launcher launcher = new Launcher();
+  public static Drive drive = new Drive();
 
   
   @Override
