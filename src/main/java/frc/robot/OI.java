@@ -17,6 +17,8 @@ public class OI {
     public Joystick controller; //allows us to create a Joystick called controller
     public JoystickButton launch; //allows us to create a Joystick Button called launch
 
+    public Joystick leftStick, rightStick;
+
   public OI() {
       //Creates an instance of the Joystick class called controller and JoystickButton called launch
       //Specifies the port # for the controller and button # which are constants stored in RobotMap
@@ -25,5 +27,8 @@ public class OI {
       
       //runs SpinUp command while the above specified launch button on the controller is held down
       launch.whileHeld(new SpinUp());
+
+      leftStick = new Joystick(RobotMap.USB_JOYSTICK_LEFT);
+      rightStick = new Joystick(RobotMap.USB_JOYSTICK_RIGHT);
   }
 }
