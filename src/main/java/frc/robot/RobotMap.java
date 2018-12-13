@@ -11,6 +11,9 @@ package frc.robot;
 public class RobotMap {
   //USB port number on laptop that the controller is plugged into
   public static final int USB_CONTROLLER = 2;
+  //joystick USB port #s
+  public static final int USB_JOYSTICK_LEFT = 0;
+  public static final int USB_JOYSTICK_RIGHT = 1;
 
   //PWM port # on roboRIO of the motor controller for the motor we want to spin
   public static final int PWM_TOP_RIGHT = 2;
@@ -23,6 +26,15 @@ public class RobotMap {
 
   //button # on controller for spinning up, button 1 is A (green)
   public static final int SPIN_UP_BUTTON = 1;
+
+  //Talon SRX (motor controller) ID's
+  public static final int ID_LEFT_FRONT = 2;
+  public static final int ID_LEFT_MIDDLE = 4;
+  public static final int ID_LEFT_REAR = 10;
+
+  public static final int ID_RIGHT_FRONT = 14;
+  public static final int ID_RIGHT_MIDDLE = 3;
+  public static final int ID_RIGHT_REAR = 9;
 
   
 }
