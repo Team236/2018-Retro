@@ -15,6 +15,7 @@ public class RobotMap {
   public static final int USB_JOYSTICK_LEFT = 0;
   public static final int USB_JOYSTICK_RIGHT = 1;
 
+  //LAUNCH MOTOR CONTROLLERS
   //PWM port # on roboRIO of the motor controller for the motor we want to spin
   public static final int PWM_TOP_RIGHT = 2;
   public static final int PWM_TOP_LEFT = 3;
@@ -27,7 +28,10 @@ public class RobotMap {
   //button # on controller for spinning up, button 1 is A (green)
   public static final int SPIN_UP_BUTTON = 1;
 
-  //Talon SRX (motor controller) ID's
+  //DRIVE MOTOR CONTROLLERS
+  //Talon SRX (motor controller) ID's (talon ID's are set in the web page roborio-236-frc.local this is necessary
+  //to set a unique ID for each controller because they use a CAN bus to connect to the roborio rather than each one 
+  //being indiviually attached to the roborio by PWM)
   public static final int ID_LEFT_FRONT = 2;
   public static final int ID_LEFT_MIDDLE = 4;
   public static final int ID_LEFT_REAR = 10;
